@@ -3,88 +3,76 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>qweetin - Portfolio</title>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+<title>Justqwee - Portfolio</title>
+<!-- เปลี่ยนไอคอนแท็บเป็นรูปใยแมงมุม -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕸️</text></svg>">
 
-<!-- ==========================================================================
-     แก้ไขข้อมูลส่วนตัวของคุณในส่วน ME ด้านล่างนี้ได้ตามต้องการ
-     ========================================================================== -->
 <script>
 const ME = {
-
   // GitHub username ใช้ดึงรูปโปรไฟล์มาแสดงอัตโนมัติ
   github: "qweetin",
-
   // ชื่อที่ต้องการให้แสดง
   name: "Justqwee",
-
- // บอกว่าคุณคือใคร สั้น ๆ
+  // บอกว่าคุณคือใคร สั้น ๆ
   role: "นักศึกษาวิศวกรรมคอมพิวเตอร์ ปี 1 · มทร.อีสาน",
-
-  // หนึ่งประโยคว่าคุณสนใจสร้างอะไร เขียนให้เจาะจง อย่าเขียนกว้าง ๆ
-  // ไม่ดี: "รักการเขียนโปรแกรม"   ดี: "อยากทำระบบรดน้ำต้นไม้ที่ดูพยากรณ์อากาศก่อนรดน้ำ"
-    tagline: "กำลังเริ่มต้นเรียนรู้การเขียนโค้ดและสร้างเว็บแรกของตัวเอง",
-
+  // หนึ่งประโยคว่าคุณสนใจสร้างอะไร
+  tagline: "กำลังเริ่มต้นเรียนรู้การเขียนโค้ดและสร้างเว็บแรกของตัวเอง",
+  // แนะนำตัว
   about: "สวัสดีครับ ผมชื่อตาต้า นักศึกษาชั้นปีที่ 1 สาขาวิศวกรรมคอมพิวเตอร์ มทร.อีสาน มีความหลงใหลในโลกของการพัฒนาซอฟต์แวร์และการออกแบบเว็บแอปพลิเคชัน ปัจจุบันกำลังเร่งฝึกฝนทักษะพื้นฐานทางเทคโนโลยี ตั้งแต่เรื่องระบบอินเทอร์เน็ต การเขียนโค้ดฝั่ง Front-end (HTML, CSS, JS) ไปจนถึงการบริหารจัดการซอร์สโค้ดด้วย Git เพื่อสร้างรากฐานที่มั่นคงสำหรับการเป็นนักพัฒนาในอนาคต และพร้อมที่จะเปิดรับโอกาสใหม่ ๆ ในการเรียนรู้และสร้างสรรค์ผลงานที่เป็นประโยชน์",
-
+  // กำลังเรียนรู้อะไรอยู่ตอนนี้
   learning: [
     "การใช้งานอินเทอร์เน็ตและบริการออนไลน์",
     "โครงสร้างเว็บเบื้องต้น (HTML และ CSS)",
     "การใช้งาน Git และ GitHub พื้นฐาน",
-    
   ],
-
+  // ผลงาน
   works: [],
-
+  // ช่องทางติดต่อ
   links: [
-    { label: "GitHub", url: "https://qweetin.github.io" }
+    { label: "GitHub Profile", url: "https://qweetin.github.io/" }
   ],
-
-  theme: "ocean",
-
+  
+  // เปลี่ยนเป็นธีม spiderman
+  theme: "spiderman",
 };
 </script>
 
-
 <style>
-/* ---------- สีพื้นฐาน ทุกธีมใช้ร่วมกัน ---------- */
+/* ---------- สีพื้นฐาน ---------- */
 :root {
-  --bg:#0b1020; --line:#24304f; --text:#e8edf7; --muted:#93a1c0;
-  --surface:rgba(255,255,255,.05);      /* พื้นของการ์ดผลงานและแผงข้อมูล */
+  --bg:#0b0c10; --line:#1f2833; --text:#e8edf7; --muted:#8a99a8;
+  --surface:rgba(255,255,255,.03);
   --mono: ui-monospace,"SF Mono",Menlo,Consolas,monospace;
 }
 
-/* ---------- ธีมสี เลือกได้ที่ช่อง theme ด้านบน ไม่ต้องแก้ตรงนี้ ----------
-   ห้าธีมแรกเปลี่ยนแค่สีเน้นกับแสงพื้นหลัง พื้นหลังยังเข้มเหมือนกันหมด
-   จึงไม่มีทางเลือกจนอ่านไม่ออก                                          */
-:root,
+/* ---------- ธีม Spider-Man (แดง/น้ำเงิน) ---------- */
+[data-theme="spiderman"] { 
+  --accent:#e23636;        /* สีแดง Spider-Man */
+  --accent-soft:#2563eb;   /* สีน้ำเงิน Spider-Man */
+  --glow1:#3a0c10;         /* แสงพื้นหลังสีแดงเข้ม */
+  --glow2:#0b1b42;         /* แสงพื้นหลังสีน้ำเงินเข้ม */
+  --line:#2e181c;
+}
+
+/* ธีมอื่นๆ สำรองไว้ */
 [data-theme="ocean"]  { --accent:#38bdf8; --accent-soft:#0ea5e9; --glow1:#1d2a52; --glow2:#10305c; }
 [data-theme="sunset"] { --accent:#fb923c; --accent-soft:#f97316; --glow1:#4a2418; --glow2:#5c2b10; }
 [data-theme="forest"] { --accent:#34d399; --accent-soft:#10b981; --glow1:#14342a; --glow2:#0f3d2e; }
 [data-theme="grape"]  { --accent:#c084fc; --accent-soft:#a855f7; --glow1:#2e1d52; --glow2:#3d1a5c; }
 [data-theme="mono"]   { --accent:#e2e8f0; --accent-soft:#cbd5e1; --glow1:#1e293b; --glow2:#0f172a; }
 
-/* ธีมเดียวที่พลิกเป็นพื้นสว่าง จึงต้องเขียนยาวกว่าเพื่อน
-   เพราะต้องกลับค่าพื้นหลัง ตัวอักษร เส้น และพื้นการ์ดใหม่ทั้งชุด */
-[data-theme="mono-light"] {
-  --accent:#334155; --accent-soft:#475569; --glow1:#dbe3ee; --glow2:#e6ebf3;
-  --bg:#f7f9fc; --line:#ccd6e4; --text:#0f172a; --muted:#52627d;
-  --surface:rgba(15,23,42,.04);
-}
-
 *{ box-sizing:border-box }
 
 body{
   margin:0; min-height:100vh; color:var(--text);
   font-family:"Segoe UI","Noto Sans Thai",system-ui,sans-serif;
-  line-height:1.75;                       /* ระยะห่างระหว่างบรรทัด อ่านง่ายขึ้นมาก */
+  line-height:1.75;
   background:
     radial-gradient(1000px 460px at 12% -10%, var(--glow1) 0, transparent 60%),
     radial-gradient(820px 400px at 92% 0,   var(--glow2) 0, transparent 55%),
     var(--bg);
 }
 
-/* ความกว้างจำกัดไว้ ไม่ให้บรรทัดยาวจนตาไล่ไม่ทัน */
 .wrap{ max-width:760px; margin:0 auto; padding:0 22px 80px }
 
 /* ---------- ส่วนหัว ---------- */
@@ -93,13 +81,14 @@ body{
   width:96px; height:96px; border-radius:50%;
   border:2px solid var(--accent); object-fit:cover; flex-shrink:0;
   background:var(--surface);
+  box-shadow: 0 0 15px var(--glow1); /* เพิ่มออร่าสีแดงรอบรูปโปรไฟล์ */
 }
-/* ใช้แทนรูปโปรไฟล์ เมื่อโหลดรูปจาก GitHub ไม่สำเร็จ */
 .avatar-fallback{
   width:96px; height:96px; border-radius:50%; flex-shrink:0;
   border:2px solid var(--accent); background:var(--surface);
   display:flex; align-items:center; justify-content:center;
   font-size:38px; font-weight:600; color:var(--accent);
+  box-shadow: 0 0 15px var(--glow1);
 }
 .hero-text{ flex:1; min-width:240px }
 .role{
@@ -108,23 +97,28 @@ body{
 }
 h1{ font-size:clamp(30px,6vw,46px); line-height:1.15; margin:0 0 8px; letter-spacing:-.02em }
 .tagline{ font-size:clamp(17px,2.6vw,20px); color:var(--text); margin:0; opacity:.92 }
-
 .about{ color:var(--muted); margin:26px 0 0; max-width:62ch }
 
 /* ---------- ปุ่มลิงก์ ---------- */
 .links{ display:flex; flex-wrap:wrap; gap:10px; padding:0; margin:24px 0 0; list-style:none }
 .links a{
-  display:inline-block; border:1px solid var(--line); border-radius:999px;
+  display:inline-block; border:1px solid var(--accent-soft); border-radius:999px;
   padding:9px 20px; color:var(--text); text-decoration:none; font-size:15px;
-  transition:border-color .15s ease, color .15s ease;
+  transition:all .2s ease;
+  background:rgba(37, 99, 235, 0.1); /* พื้นหลังปุ่มสีน้ำเงินจางๆ */
 }
-.links a:hover, .links a:focus-visible{ border-color:var(--accent); color:var(--accent) }
+.links a:hover, .links a:focus-visible{ 
+  border-color:var(--accent); 
+  color:var(--accent);
+  background:rgba(226, 54, 54, 0.1); /* ชี้แล้วเปลี่ยนเป็นแดง */
+  transform: translateY(-2px);
+}
 
 /* ---------- หัวข้อของแต่ละส่วน ---------- */
 section{ margin-top:52px }
 h2{
   font:600 12px/1 var(--mono); letter-spacing:.16em; text-transform:uppercase;
-  color:var(--muted); border-bottom:1px solid var(--line);
+  color:var(--accent-soft); border-bottom:1px solid var(--line);
   padding-bottom:10px; margin:0 0 20px;
 }
 
@@ -140,7 +134,9 @@ h2{
 .work{
   border:1px solid var(--line); border-radius:12px; padding:16px 18px;
   background:var(--surface);
+  transition: border-color .2s;
 }
+.work:hover { border-color: var(--accent-soft); }
 .work h3{ margin:0 0 6px; font-size:17px }
 .work p{ margin:0; color:var(--muted); font-size:14.5px }
 .work a{ color:var(--accent); text-decoration:none; font-size:14px; display:inline-block; margin-top:10px }
@@ -197,8 +193,6 @@ footer a{ color:var(--accent) }
     <div class="works" id="works"></div>
   </section>
 
-  <!-- ค่าทุกตัวในแผงนี้ browser วัดจากการโหลดหน้านี้จริง ไม่ได้เขียนค้างไว้
-       เปรียบเทียบกับ DevTools (F12) แท็บ Network ได้ ค่าควรสอดคล้องกัน -->
   <section>
     <h2>ข้อมูลการเชื่อมต่อของหน้านี้</h2>
     <div class="panel">
@@ -216,8 +210,7 @@ footer a{ color:var(--accent) }
 <script>
 const $ = (id) => document.getElementById(id);
 
-/* ---------- 1) นำข้อมูลจากกล่อง ME มาแสดง ---------- */
-document.title = ME.name;
+document.title = ME.name + " - Portfolio";
 document.documentElement.dataset.theme = ME.theme || 'ocean';
 
 $('role').textContent    = ME.role;
@@ -225,9 +218,6 @@ $('name').textContent    = ME.name;
 $('tagline').textContent = ME.tagline;
 $('about').textContent   = ME.about;
 
-/* รูปโปรไฟล์ดึงจาก GitHub อัตโนมัติ ไม่ต้องอัปโหลดรูปเอง
-   ถ้าโหลดไม่สำเร็จ (พิมพ์ username ผิด หรือเน็ตมีปัญหา) จะแสดงตัวอักษรแรกของชื่อแทน
-   หน้าเว็บจะได้ไม่มีรูปแตกค้างอยู่ */
 const avatar = $('avatar');
 avatar.alt = 'รูปโปรไฟล์ของ ' + ME.name;
 avatar.addEventListener('error', () => {
@@ -241,7 +231,7 @@ avatar.src = 'https://github.com/' + ME.github + '.png?size=192';
 
 for (const item of ME.learning || []) {
   const li = document.createElement('li');
-  li.textContent = item;          // ใช้ textContent เสมอ ปลอดภัยกว่า innerHTML
+  li.textContent = item;
   $('learning').appendChild(li);
 }
 
@@ -255,7 +245,6 @@ for (const link of ME.links || []) {
   $('links').appendChild(li);
 }
 
-/* ผลงานยังว่างได้ ปี 1 เทอมแรกเป็นเรื่องปกติ */
 if (!ME.works || ME.works.length === 0) {
   const box = document.createElement('div');
   box.className = 'empty';
@@ -283,9 +272,7 @@ if (!ME.works || ME.works.length === 0) {
 
 $('repolink').href = 'https://github.com/' + ME.github + '/' + ME.github + '.github.io';
 
-/* ---------- 2) แผงข้อมูลการเชื่อมต่อ อ่านค่าจริงจาก Performance API ---------- */
 function ms(v) {
-  /* 0 ms ไม่ได้แปลว่าไม่มีค่า แต่แปลว่า browser ข้ามขั้นนั้นเพราะมีข้อมูลใน cache อยู่แล้ว */
   if (typeof v !== 'number' || v < 0 || Number.isNaN(v)) return '—';
   return Math.round(v) + ' ms';
 }
