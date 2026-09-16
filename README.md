@@ -3,50 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>เว็บไซต์ของฉัน</title>
+<title>qweetin - Portfolio</title>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
 
 <!-- ==========================================================================
-     แก้เฉพาะในกล่องนี้ก็พอ ส่วนอื่นของไฟล์ไม่ต้องแตะก็ได้
-     ทุกช่องมีคำอธิบายกำกับว่าใส่อะไร
+     แก้ไขข้อมูลส่วนตัวของคุณในส่วน ME ด้านล่างนี้ได้ตามต้องการ
      ========================================================================== -->
 <script>
 const ME = {
 
-  // GitHub username ของคุณ ใช้ดึงรูปโปรไฟล์มาแสดงอัตโนมัติ ไม่ต้องอัปโหลดรูปเอง
+  // GitHub username ใช้ดึงรูปโปรไฟล์มาแสดงอัตโนมัติ
   github: "Justqwee",
 
-  // ชื่อที่ต้องการให้แสดง ใช้ชื่อเล่นได้
+  // ชื่อที่ต้องการให้แสดง
   name: "qweetin",
 
-  // บอกว่าคุณคือใคร สั้น ๆ
+  // สถานะ / บทบาทสั้น ๆ
   role: "นักศึกษาวิศวกรรมคอมพิวเตอร์ ปี 1 · มทร.อีสาน",
 
-  // หนึ่งประโยคว่าคุณสนใจสร้างอะไร เขียนให้เจาะจง อย่าเขียนกว้าง ๆ
-  // ไม่ดี: "รักการเขียนโปรแกรม"   ดี: "อยากทำระบบรดน้ำต้นไม้ที่ดูพยากรณ์อากาศก่อนรดน้ำ"
-  tagline: "หนึ่งประโยคว่าคุณสนใจสร้างอะไร",
+  // หนึ่งประโยคที่บอกเป้าหมายหรือความสนใจที่เจาะจง
+  tagline: "สนใจการพัฒนา Web Application และระบบ IoT เพื่อแก้ปัญหาในชีวิตประจำวัน",
 
-  // แนะนำตัว 2-3 บรรทัด ว่ามาจากไหน สนใจอะไร กำลังจะไปทางไหน
-  about: "เขียนแนะนำตัวสัก 2-3 บรรทัด ว่าคุณมาจากไหน สนใจอะไรเป็นพิเศษ และอยากพัฒนาตัวเองไปทางไหน ไม่ต้องยาว ขอให้เป็นตัวคุณจริง ๆ",
+  // แนะนำตัว 2-3 บรรทัด
+  about: "สวัสดีครับ ผมชื่อกวิน (qweetin) กำลังศึกษาชั้นปีที่ 1 สาขาวิศวกรรมคอมพิวเตอร์ มทร.อีสาน มีความสนใจเกี่ยวกับการเขียนโปรแกรมพัฒนาเว็บไซต์และระบบฝังตัว (Embedded Systems) มุ่งมั่นที่จะเรียนรู้เทคโนโลยีใหม่ ๆ เพื่อพัฒนาตนเองอย่างต่อเนื่องครับ",
 
-  // กำลังเรียนรู้อะไรอยู่ตอนนี้ ใส่ได้ 2-5 รายการ
+  // สิ่งที่กำลังเรียนรู้อยู่ในปัจจุบัน
   learning: [
     "พื้นฐานอินเทอร์เน็ตและบริการออนไลน์",
-    "HTML และ CSS",
-    "การใช้ Git และ GitHub",
+    "การพัฒนาเว็บไซต์ด้วย HTML, CSS และ JavaScript",
+    "การใช้ Git และ GitHub ในการจัดการเวอร์ชันโค้ด",
+    "พื้นฐานการเขียนโปรแกรมภาษา C และ Python"
   ],
 
-  // ผลงาน ปี 1 เทอมแรกยังไม่มีก็ไม่เป็นไร ปล่อยว่างไว้ได้ หน้าเว็บจะขึ้นข้อความให้เอง
-  // เมื่อมีงานแล้วค่อยเพิ่มทีละชิ้น เช่น
-  // { title: "เครื่องวัดอุณหภูมิห้อง", desc: "ใช้ Arduino กับเซนเซอร์ DHT11", url: "" },
-  works: [],
+  // ผลงาน (หากยังไม่มีสามารถใส่ [] ไว้ได้ หน้าเว็บจะแสดงข้อความต้อนรับให้อัตโนมัติ)
+  works: [
+    // ตัวอย่างการใส่ผลงานเมื่อมีโปรเจกต์:
+    // { title: "Personal Website", desc: "เว็บไซต์โปรไฟล์ส่วนตัวแบบ Responsive โฮสต์บน GitHub Pages", url: "https://github.com/Justqwee" }
+  ],
 
-  // ช่องทางติดต่อ ใช้ลิงก์สาธารณะเท่านั้น อย่าใส่เบอร์โทรหรืออีเมลส่วนตัว
+  // ช่องทางติดต่อหรือลิงก์สำคัญ
   links: [
-    { label: "GitHub", url: "https://github.com/your-username" },
+    { label: "GitHub Profile", url: "https://github.com/Justqwee" }
   ],
 
-  // ธีมสี เลือกหนึ่งอย่าง: "ocean" | "sunset" | "forest" | "grape" | "mono" | "mono-light"
+  // ธีมสี เลือกได้จาก: "ocean" | "sunset" | "forest" | "grape" | "mono" | "mono-light"
   theme: "ocean",
 
 };
@@ -60,9 +60,7 @@ const ME = {
   --mono: ui-monospace,"SF Mono",Menlo,Consolas,monospace;
 }
 
-/* ---------- ธีมสี เลือกได้ที่ช่อง theme ด้านบน ไม่ต้องแก้ตรงนี้ ----------
-   ห้าธีมแรกเปลี่ยนแค่สีเน้นกับแสงพื้นหลัง พื้นหลังยังเข้มเหมือนกันหมด
-   จึงไม่มีทางเลือกจนอ่านไม่ออก                                          */
+/* ---------- ธีมสี เลือกได้ที่ช่อง theme ด้านบน ---------- */
 :root,
 [data-theme="ocean"]  { --accent:#38bdf8; --accent-soft:#0ea5e9; --glow1:#1d2a52; --glow2:#10305c; }
 [data-theme="sunset"] { --accent:#fb923c; --accent-soft:#f97316; --glow1:#4a2418; --glow2:#5c2b10; }
@@ -70,8 +68,6 @@ const ME = {
 [data-theme="grape"]  { --accent:#c084fc; --accent-soft:#a855f7; --glow1:#2e1d52; --glow2:#3d1a5c; }
 [data-theme="mono"]   { --accent:#e2e8f0; --accent-soft:#cbd5e1; --glow1:#1e293b; --glow2:#0f172a; }
 
-/* ธีมเดียวที่พลิกเป็นพื้นสว่าง จึงต้องเขียนยาวกว่าเพื่อน
-   เพราะต้องกลับค่าพื้นหลัง ตัวอักษร เส้น และพื้นการ์ดใหม่ทั้งชุด */
 [data-theme="mono-light"] {
   --accent:#334155; --accent-soft:#475569; --glow1:#dbe3ee; --glow2:#e6ebf3;
   --bg:#f7f9fc; --line:#ccd6e4; --text:#0f172a; --muted:#52627d;
@@ -83,14 +79,13 @@ const ME = {
 body{
   margin:0; min-height:100vh; color:var(--text);
   font-family:"Segoe UI","Noto Sans Thai",system-ui,sans-serif;
-  line-height:1.75;                       /* ระยะห่างระหว่างบรรทัด อ่านง่ายขึ้นมาก */
+  line-height:1.75;
   background:
     radial-gradient(1000px 460px at 12% -10%, var(--glow1) 0, transparent 60%),
     radial-gradient(820px 400px at 92% 0,   var(--glow2) 0, transparent 55%),
     var(--bg);
 }
 
-/* ความกว้างจำกัดไว้ ไม่ให้บรรทัดยาวจนตาไล่ไม่ทัน */
 .wrap{ max-width:760px; margin:0 auto; padding:0 22px 80px }
 
 /* ---------- ส่วนหัว ---------- */
@@ -100,7 +95,6 @@ body{
   border:2px solid var(--accent); object-fit:cover; flex-shrink:0;
   background:var(--surface);
 }
-/* ใช้แทนรูปโปรไฟล์ เมื่อโหลดรูปจาก GitHub ไม่สำเร็จ */
 .avatar-fallback{
   width:96px; height:96px; border-radius:50%; flex-shrink:0;
   border:2px solid var(--accent); background:var(--surface);
@@ -203,8 +197,6 @@ footer a{ color:var(--accent) }
     <div class="works" id="works"></div>
   </section>
 
-  <!-- ค่าทุกตัวในแผงนี้ browser วัดจากการโหลดหน้านี้จริง ไม่ได้เขียนค้างไว้
-       เปรียบเทียบกับ DevTools (F12) แท็บ Network ได้ ค่าควรสอดคล้องกัน -->
   <section>
     <h2>ข้อมูลการเชื่อมต่อของหน้านี้</h2>
     <div class="panel">
@@ -223,7 +215,7 @@ footer a{ color:var(--accent) }
 const $ = (id) => document.getElementById(id);
 
 /* ---------- 1) นำข้อมูลจากกล่อง ME มาแสดง ---------- */
-document.title = ME.name;
+document.title = ME.name + " - Portfolio";
 document.documentElement.dataset.theme = ME.theme || 'ocean';
 
 $('role').textContent    = ME.role;
@@ -231,9 +223,6 @@ $('name').textContent    = ME.name;
 $('tagline').textContent = ME.tagline;
 $('about').textContent   = ME.about;
 
-/* รูปโปรไฟล์ดึงจาก GitHub อัตโนมัติ ไม่ต้องอัปโหลดรูปเอง
-   ถ้าโหลดไม่สำเร็จ (พิมพ์ username ผิด หรือเน็ตมีปัญหา) จะแสดงตัวอักษรแรกของชื่อแทน
-   หน้าเว็บจะได้ไม่มีรูปแตกค้างอยู่ */
 const avatar = $('avatar');
 avatar.alt = 'รูปโปรไฟล์ของ ' + ME.name;
 avatar.addEventListener('error', () => {
@@ -247,7 +236,7 @@ avatar.src = 'https://github.com/' + ME.github + '.png?size=192';
 
 for (const item of ME.learning || []) {
   const li = document.createElement('li');
-  li.textContent = item;          // ใช้ textContent เสมอ ปลอดภัยกว่า innerHTML
+  li.textContent = item;
   $('learning').appendChild(li);
 }
 
@@ -261,7 +250,6 @@ for (const link of ME.links || []) {
   $('links').appendChild(li);
 }
 
-/* ผลงานยังว่างได้ ปี 1 เทอมแรกเป็นเรื่องปกติ */
 if (!ME.works || ME.works.length === 0) {
   const box = document.createElement('div');
   box.className = 'empty';
@@ -291,7 +279,6 @@ $('repolink').href = 'https://github.com/' + ME.github + '/' + ME.github + '.git
 
 /* ---------- 2) แผงข้อมูลการเชื่อมต่อ อ่านค่าจริงจาก Performance API ---------- */
 function ms(v) {
-  /* 0 ms ไม่ได้แปลว่าไม่มีค่า แต่แปลว่า browser ข้ามขั้นนั้นเพราะมีข้อมูลใน cache อยู่แล้ว */
   if (typeof v !== 'number' || v < 0 || Number.isNaN(v)) return '—';
   return Math.round(v) + ' ms';
 }
