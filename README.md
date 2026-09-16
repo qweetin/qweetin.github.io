@@ -1,4 +1,3 @@
-## Hi there 👋
 
 <!doctype html>
 <html lang="th">
